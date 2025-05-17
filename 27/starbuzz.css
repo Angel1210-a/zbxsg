@@ -1,0 +1,181 @@
+
+/* 全局样式设置，针对 body 元素 */
+body { 
+  background-color: #b5a789;
+  font-family:      Georgia, "Times New Roman", Times, serif;
+  font-size:        small;
+  margin:           0px;
+}
+
+/* 针对 class 为 header 的元素设置样式 */
+body>header {
+  background-color: #675c47;
+  margin:           10px;
+  height:           108px;
+}
+
+/* 针对 class 为 main 的元素设置样式 */
+section.main,section.blog {
+  display: table-cell;
+  background:       #efe5d0 url(images/background.gif) top left;
+  font-size:        105%;
+  padding:          15px;
+  margin: 0px 10px 10px 10px;
+  vertical-align: top;
+}
+/* 针对 class 为 sidebar 的元素设置样式 */
+
+.tableContainer aside {
+  display: table-cell;
+  vertical-align: top;
+  background:       #efe5d0 url(images/background.gif) bottom right;
+  font-size:        105%;
+  padding:          15px;
+  margin:           0px 10px 10px 10px;
+ /*  float: right; /* 设置向右浮动 */
+   /*  width: 200px; /* 设置固定宽度为 280 像素 */
+}
+
+/* 针对 class 为 footer 的元素设置样式 */
+footer {
+  background-color: #675c47;
+  color:            #efe5d0;
+  text-align:       center;
+  padding:          15px;
+  margin:           10px;
+  font-size:        90%;
+ clear: right;
+}
+
+/* 针对 h1 标题元素设置样式 */
+h1 {
+  font-size:        120%;
+  color:            #954b4b;
+}
+
+/* 针对 class 为 slogan 的元素设置样式 */
+.slogan { 
+  color: #954b4b; 
+}
+
+/* 针对 class 为 beanheading 的元素设置样式 */
+.beanheading {
+  text-align:       center;
+  line-height:      1.8em;
+}
+
+/* 针对未访问过的链接设置样式 */
+a:link {
+  color:            #b76666;
+  text-decoration:  none;
+  border-bottom:    thin dotted #b76666;
+}
+
+/* 针对已访问过的链接设置样式 */
+a:visited {
+  color:            #675c47;
+  text-decoration:  none;
+  border-bottom:    thin dotted #675c47;
+}
+
+
+
+
+div.tableContainer {
+  display: table;
+  border-spacing: 10px;
+}
+
+div.tableRow {
+  display: table-row; 
+}
+
+section.drinks {
+  display: table-cell; /* 设置为表格单元格 */
+  background-color: #efe5d0;
+  padding: 15px;
+  vertical-align:top ;
+}
+
+/* 若在 index.html 里添加样式，需用 <style> 标签包裹 */
+.split-images {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.header-img{
+  width: 260px; /* 设置图片宽度 */
+  height: 108px; /* 设置图片高度 */;
+  background-image: url('images/header.gif'); /* 设置背景图片 */
+}
+
+div.right-header {
+  background-position-x:-540px;
+  float:right;
+}
+div.left-header {
+  background-position-x:0px;
+
+}
+
+.award{
+  position: fixed;
+  top:30px;
+  left: 45%;
+  animation: rotate 10linear infinite;
+}
+.coupon {
+	position: fixed;
+	top: 350px;
+	left: -210px; 
+  transition: left 10s ease;
+}
+.coupon:hover{
+  left: 0px;
+}
+
+.coupon a, img{
+	border: none;
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg); 
+  }
+}
+
+
+nav {
+  background-color: #efe5d0;
+  margin: 10px 10px 0px 10px;
+}
+
+nav ul {
+	margin: 0px;
+	list-style-type: none;
+	padding: 5px 0px 5px 5px;
+}
+
+nav ul li {
+	display: inline;
+	padding: 5px 10px 5px 10px;
+}
+
+ul li a:link, nav ul li a:visited {
+	color: #954b4b;
+	border-bottom: none;
+	font-weight: bold;
+/*
+	text-shadow: 1px 1px 3px #e2c2c2; 
+	text-transform: uppercase;
+*/
+}
+nav ul li.selected {
+	background-color: #c8b99c;
+}
+
+
+
