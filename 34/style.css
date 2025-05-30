@@ -1,0 +1,58 @@
+* {
+  margin: 0px;/* 从0px增加到10px */
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.container {/* 保持容器样式不变 */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.main-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  gap: 40px;
+}
+
+.column {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.column ul {
+  list-style: none;
+}
+
+.column li {
+  margin-bottom: 17px;   /* 从15px增加到17px */
+  font-size: 12.5px;       /* 从12px增加到14px */
+  color: #555;           /* 从#666加深颜色 */
+  line-height: 1.5;      /* 新增行高设置 */
+}
+
+.column ul {
+  list-style: none;
+  margin-top: 10px;      /* 新增列表顶部间距 */
+}
+
+/* 调整底部链接间距 */
+.footer-links {
+    gap: 20px;            /* 原为15px */
+    margin: 25px 0;       /* 原为20px 0 */
+}
+
+.footer-links a {
+    font-size: 14px;      /* 原为10px */
+}
+
+/* 保持标题样式不变 */
+.column h3 {
+  font-size: 20px;  /* 从14px调整为px */
+  margin-bottom: 40px;/* 保持底部间距 */
+  color: #333;/* 保持颜色 */
+  font-weight: normal; /* 从bold改为normal取消加粗 */
+}
